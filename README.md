@@ -1,4 +1,40 @@
-# AR Foundation samples
+# Projet Tap to Place AR — Rendu academique
+
+## Fichiers importants
+
+| Fichier | Description |
+|---------|-------------|
+| [Rapport_Tap2Place_AR.md](Rapport_Tap2Place_AR.md) | Rapport complet : demarche, architecture de la scene, explication des scripts et du pipeline de detection de surfaces |
+| [tap2place.apk](tap2place.apk) | APK Android pret a installer — scanner une surface plane puis taper pour placer un cube 3D |
+| [Assets/Scenes/SimpleAR/](Assets/Scenes/SimpleAR/) | Scene Unity utilisee pour le projet |
+| [Assets/Scripts/Runtime/ARPlaceObject.cs](Assets/Scripts/Runtime/ARPlaceObject.cs) | Script de placement d'objet sur les surfaces detectees |
+| [Assets/Scripts/Runtime/Events/RaycastEventController.cs](Assets/Scripts/Runtime/Events/RaycastEventController.cs) | Script de gestion des inputs et raycasts AR |
+
+## Installer l'APK sur un telephone Android
+
+1. Telecharger le fichier [tap2place.apk](tap2place.apk) sur le telephone (ou le transferer par USB / Google Drive)
+2. Ouvrir le fichier `.apk` depuis le telephone
+3. Autoriser l'installation depuis des sources inconnues si demande
+4. Lancer l'application
+5. Pointer la camera vers une surface plane (sol, table) et attendre que des surfaces colorees apparaissent
+6. Taper sur une surface detectee pour placer un cube 3D
+
+**Prerequis :** telephone Android compatible ARCore (la majorite des telephones recents), avec Google Play Services for AR installe.
+
+## Technologies utilisees
+
+- **Unity 6** (6000.3.1f1)
+- **AR Foundation 6.3.1** — framework AR multiplateforme de Unity
+- **Google ARCore XR Plugin 6.3.1** — detection de surfaces par vision par ordinateur
+- **Universal Render Pipeline (URP)** — pipeline de rendu optimise mobile
+
+---
+
+*Ce projet est un fork des [AR Foundation Samples](https://github.com/Unity-Technologies/arfoundation-samples) officiels de Unity, adapte pour un rendu academique.*
+
+---
+
+# AR Foundation samples (documentation originale)
 
 [AR Foundation](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@6.3/manual/index.html) enables you to create multi-platform augmented reality (AR) apps with Unity. This GitHub repository contains AR Foundation samples, the official AR Foundation sample app that you can download, build to your device, and use as a starting point for your own projects.
 
