@@ -41,9 +41,12 @@ ExportedObj/
 sysinfo.txt
 
 # Builds
-*.apk
+
 *.unitypackage
 
 .DS_Store
+*_BurstDebugInformation_DoNotShip/
+*.slnx
+.claude/
 
 Assets/UnityXRContent/
